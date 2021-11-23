@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#da2020">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#da2020">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#da2020">
+<meta charset=utf-8 />
+<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+<head>
+<title> Lekker Pittig </title>
+<link href="style.css" type="text/css" rel="stylesheet" media="screen"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="jquery/jquery-2.1.1.min.js"></script>
+	<script>
+    $(document).ready(function(){
+		
+		
+		
+	
+		var ham = 'unclicked';
+	
+		$('.ham').click(function(){
+            if (ham == 'unclicked'){
+								ham = 'clicked';
+								$('.nav').animate({height: '330px'}, 1000);
+								$('.ul').animate({height: '330px'}, 1000);
+			}
+                     else { 
+						 ham = 'unclicked';
+						 $('.nav').animate({height: '30px'}, 1000);
+						 $('.ul').animate({height: '50px'}, 1000);
+                    }
+    	});
+		
+    });
+</script>
+	<style>
+		#content {
+			height: 700px;
+		}
+		#line1 {
+			margin-top: 80px;
+		}
+		#content p:last-child {
+			margin-top: 50px;
+		}
+		@media screen and (max-width: 1024px) {
+			#content {
+				height: 900px;
+			}
+			footer {
+				margin-top: 100px;
+			}
+		}
+		@media screen and (max-width: 480px) {
+			#content {
+				height: 930px;
+			}
+			footer {
+				margin-top: 450px;
+			}
+		}
+		@media screen and (max-width: 350px) {
+			.lp {
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+    <div id="container">
+		<nav class="nav">
+				<ul class="ul">
+					<a href="index.html"><img class="logo" src="icon/logo%20lekker%20pittig%20def.png"/></a>
+					<div class="ham">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+					</div>
+					<li class="login2"><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+					<li id="navknop" class="login"><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+					<li id="navknop" class="home"><a href="index.html">Home</a></li>
+					<li id="navknop" class="contact"><a href="contact.html">Contact</a></li>
+					<li id="navknop" class="disclaimer"><a href="disclaimer.html">Disclaimer</a></li>
+					<li id="navknop" class="recept"><a href="recept.html">Recepten</a></li>
+					<li id="navknop" class="aboutus"><a href="kant-klaar.html">Kant &#38; Klaar</a></li>
+					<li id="navknop" class="aboutus"><a href="kruiden.html">Kruiden</a></li>
+				</ul>
+		</nav>
+        <header>
+        </header>
+		<main>
+			<div id="content">
+				<div id="border">
+					<div id="tekstvak">
+						<i id="homeicon" class="fa fa-copyright" aria-hidden="true"></i>
+						<h1 class="h1">Disclaimer</h1>
+						<h2></h2>
+						<p>
+							<br>
+							<br>
+							 Er kunnen op geen enkele wijze rechten worden ontleend aan, noch aanspraak gemaakt worden op de inhoud van deze website. Hoewel bij de samenstelling van de inhoud van deze internetsite de grootst mogelijke zorgvuldigheid wordt betracht, bestaat de mogelijkheid dat bepaalde informatie (na verloop van tijd) verouderd of niet (meer) correct is. Lekker Pittig is niet aansprakelijk voor de eventuele schade die zou kunnen voortvloeien uit het gebruik van gegevens uit de door Lekker Pittig gecreëerde site. Lekker Pittig wijst hierbij alle aansprakelijkheid af voor schade ten gevolge van het gebruik van deze gegevens of gegevens waarnaar links op deze site verwijzen. De gegevens op deze site kunnen zonder waarschuwing worden gewijzigd.
+
+						</p>
+						<div id="line1">
+							<div id="dot"></div>
+							<div id="dot"></div>
+						</div>
+						<p>
+							<br>
+							<br>
+							 Lekker Pittig geeft geen garanties met betrekking tot de aard en de inhoud van de informatie van de site en is niet aansprakelijk voor de inhoud van deze informatie of voor de gevolgen van het gebruik daarvan. Iedere aansprakelijkheid voor eventuele schade ten gevolge van toegang tot en het gebruik van de site, wordt door Lekker Pittig uitdrukkelijk afgewezen. Tevens wordt geen garantie geboden voor het foutloos en ononderbroken functioneren van de site. Verwijzingen of verbindingen naar andere sites of bronnen die niet eigendom zijn van Lekker Pittig zijn slechts opgenomen ter informatie van de gebruiker van de site. Lekker Pittig is niet verantwoordelijk voor de beschikbaarheid van deze sites of bronnen. Lekker Pittig aanvaardt geen enkele aansprakelijkheid met betrekking tot de inhoud, advertenties, producten of andere zaken op dergelijke sites of bronnen of beschikbaarheid. Lekker Pittig is niet aansprakelijk voor enige vorm van schade of verlies veroorzaakt door of in verband met het gebruik van of door het afgaan op de inhoud, goederen of diensten als aangeboden op dergelijke sites of bronnen.
+						</p>
+					</div>
+					<div class="lp">LP</div>
+				</div>
+			</div>
+			<img class="lepel" src="image/PNG/lepel.png" min-width="150px"/>
+			<img class="vork" src="image/PNG/vork.png" min-width="90px"/>
+			<img class="pan" src="image/PNG/pan.png" min-width="350px"/>
+			<img class="mes" src="image/PNG/mes.png" min-width="160px"/>
+		</main>
+        <footer>
+			<a href="#" class="fb"><img src="icon/facebook-icon-preview-1.png" /></a>
+			<a href="#" class="insta"><img src="icon/instagram-logo-vector-download-400x400.png" /></a>
+        </footer>
+    </div>
+	
+	<script>
+	
+</script>
+</body>
+</html>

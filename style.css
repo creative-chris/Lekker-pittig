@@ -1,0 +1,479 @@
+* {margin: 0px auto; padding: 0px;}
+
+body {
+	background-color: #1a1a1a;
+	top: auto;
+	width: 100%;
+	height: auto;
+}
+#container {
+	height: auto;
+	min-height: 100%;
+	width: 100%;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+.logo {
+	width: 80px;
+	position: relative;
+	float: left;
+	left: 30px;
+}
+
+/* tekst */
+@font-face {
+	font-family: Murrayinlinegrunge;
+	src: url(font/Murrayinlinegrunge.otf);
+}
+@font-face {
+	font-family: cream DEMO;
+	src: url(font/cream-DEMO.otf);
+}
+@font-face {
+	font-family: Banbury;
+	src: url(font/Banbury-DEMO.otf);
+}
+@font-face {
+	font-family: BarleyScript;
+	src: url(font/BarleyScript_PERSONAL_USE.ttf);
+}
+@font-face {
+    font-family: coolvetica;
+    src: url(font/coolvetica rg.ttf);
+}
+@font-face {
+    font-family: Cocogoose;
+    src: url(font/Cocogoose_trial.otf);
+}
+@font-face {
+    font-family: Heavitas;
+    src: url(font/Heavitas.ttf);
+}
+h1 {
+	font-size: 3em;
+	font-weight: 900 bold;
+}
+h2 {
+	font-size: 2em;
+	font-weight: 700 bold;
+}
+h3 {
+	font-size: 1em;
+	font-weight: 500 bold;
+}
+p {
+	font-size: .75em;
+}
+/* einde tekst */
+
+/* nav */
+nav {
+	font-family: Cocogoose;
+	position: relative;
+	margin-right: 20%;
+	top: 15px;
+}
+nav ul {
+	list-style: none;
+}
+nav ul li {
+	display: inline-table;
+	padding: 10px;
+}
+nav ul li a {
+	text-decoration: none;
+	font-weight: 900;
+	font-size: 0.75em;
+	color: 	white;
+}
+nav ul li a {
+	display: block;
+	font-family: cream DEMO;
+	}
+nav ul li:hover > a {
+		color: white;
+		text-decoration: underline;
+	}
+nav ul li a:focus {
+		color: white;
+	}
+#navknop {
+	float: right;
+}
+.ham {
+		visibility: hidden;
+		position: relative;
+		float: right;
+		color: white;
+	    top: 5px;
+}
+.login2 {
+	float: right;
+	position: relative;
+	left: -30px;
+	visibility: hidden;
+}
+/* einde nav */
+
+/* header */
+header {
+	width: 100%;
+	height: 100vh;
+	background-image: url(image/unsplash/kirsty-hughes-109630.jpg);
+	background-size: cover;
+}
+
+
+/* intro */
+.intro {
+	position: relative;
+	top: 23vh;
+}
+#hallo, #welkom {
+	font-size: 6em;
+	color: white;
+	text-align: center;
+	position: relative;
+	font-family: Cocogoose;
+    background-image: -webkit-linear-gradient(left, #ffb600, #DAA520, #ffb600, #ffb600, #DAA520, #ffb600); /* For Chrome and Safari */
+    background-image:    -moz-linear-gradient(left, #ffb600, #DAA520, #ffb600); /* For old Fx (3.6 to 15) */
+    background-image:     -ms-linear-gradient(left, #ffb600, #DAA520, #ffb600); /* For pre-releases of IE 10*/
+    background-image:      -o-linear-gradient(left, #ffb600, #DAA520, #ffb600); /* For old Opera (11.1 to 12.0) */
+    background-image:         linear-gradient(to right, #06a76f, #06a76f, #00b9b2, #06a76f, #06a76f); /* Standard syntax; must be last */
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+#welkom {
+	opacity: 0;
+}
+/* einde intro */
+#recept {
+	top: 200px;
+	display: inline-block;
+}
+#icon {
+	margin-right: 30px;
+	display: inline-block;
+}
+/* einde header */
+
+/* main */
+main {
+	height: auto;
+	width: auto;
+	height: 500px;
+	margin: 0px auto;
+	padding: 0px;
+}
+#content {
+	height: 930px;
+	width: 30.98958333333333%;
+	background-color: white;
+	position: relative;
+	top: -347px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#border {
+	position: relative;
+	top: 20px;
+	width: 95%;
+	height: 95%;
+	border: solid black 2px;
+}
+#tekstvak {
+	position: relative;
+	width: 95%;
+	height: 95%;
+	top: 15px;
+}
+#tekstvak h1 {
+	font-family: Banbury;
+}
+#tekstvak h2 {
+	font-family: Coolvetica;
+}
+#tekstvak h3 {
+	font-family: Cocogoose;
+	font-weight: lighter;
+}
+#homeicon {
+	font-size: 1.5em;
+	margin-left: 47.16939407341884%;
+}
+.h1 {
+	position: relative;
+	top: 10px;
+	font-size: 2.5em;
+	text-align: center;
+	color: #DAA520;
+}
+main #content #border #tekstvak h2 {
+	position: relative;
+	top: 20px;
+	text-align: center;
+}
+main #content #border #tekstvak h3 {
+	position: relative;
+	top: 60px;
+}
+#line1 {
+	background-color: black;
+	height: 1px;
+	width: 44.70588235294118%;
+	position: relative;
+	margin-top: 25%;
+}
+#dot {
+	position: relative;
+	width: 10px;
+	height: 10px;
+	background-color: black;
+	border-radius: 50%;
+	top: -5px;
+}
+#dot:first-child {
+	float: left;
+}
+#dot:last-child {
+	float: right;
+}
+.lp {
+	position: relative;
+	text-align: center;
+	font-family: Heavitas;
+	color: white;
+	background-color: black;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	line-height: 2.7;
+	top: -10px;
+}
+.vork, .pan, .lepel, .mes {
+	position: absolute;;
+	margin-top: -800px;
+}
+.vork {
+	width: 10%;
+	position: relative;
+	float: right;
+	right: 300px;
+}
+.mes {
+	width: 15%;
+	position: relative;
+	float: left;
+	margin-left: 15%;
+	top: -30px;
+}
+.lepel {
+	width: 15%;
+	position: relative;
+	float: right;
+}
+.pan {
+	width: 20%;
+	position: relative;
+	float: left;
+	left: 50px;
+}
+.items {
+	position: relative;
+	height: auto;
+	top: -300px;
+	text-align: center;
+	margin-left: 25%;
+}
+#item-1, #item-2, #item-3 {
+	position: relative;
+}
+#item-1 {
+	width: 80px;
+	height: 80px;
+	background-color: aqua;
+}
+#item-2 {
+	width: 80px;
+	height: 80px;
+	background-color: aqua;
+}
+#item-3 {
+	width: 80px;
+	height: 80px;
+	background-color: aqua;
+}
+.kruid1 {
+}
+select, form, #comment, #submit {
+	font-family: Cocogoose;
+}
+#email, #name {
+	font-family: Coolvetica;
+	font-weight: 600;
+}
+.rate {
+	text-align: center;
+}
+#star1:hover {
+	color: gold;
+}
+#star2:hover {
+	color: gold
+}
+#star3:hover {
+	color: gold
+}
+#star4:hover {
+	color: gold
+}
+#star5:hover {
+	color: gold
+}
+.star {
+	color: gold;
+}
+.star2 {
+	
+}
+.radio {
+	visibility: hidden;
+	-webkit-visibility: hidden;
+}
+/* einde main */
+
+/* footer */
+footer {
+	position: relative;
+	padding-bottom: 50px;
+	text-align: center;
+	margin-top: 100px;
+}
+footer a {
+	padding-right: 20px;
+}
+footer img {
+	position: relative;
+	width: 20px;
+	top: 10px;
+}
+/* einde footer */
+
+@media screen and (max-width: 1366px) {
+	#content {
+		width: 50%;
+	}
+	.vork {
+		right: 100px;
+	}
+	#item-1, #item-2, #item-3 {
+		margin-left: 300px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	nav {
+		margin-right: 0%;
+	}
+	#content {
+		width: 50%;
+	}
+	header {
+		background-image: url(image/unsplash/todd-quackenbush-700.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	nav {
+		background-color: black;
+		top: 0px;
+		height: 30px;
+		position: fixed;
+		width: 100%;
+		z-index: 2;
+	}
+	nav ul {
+		height: 55px;
+		overflow: hidden;
+	}
+	nav ul li:hover {
+		background-color: #dedede;
+	}
+	nav ul li:hover a {
+		color: black;
+		text-decoration: none;
+	}
+	#navknop {
+		float: none;
+		display: block;
+		margin-top: 10px;
+	}
+	.ham {
+		visibility: visible;
+		color: white;
+		float: right;
+		height: 30px;
+		width: 30px;
+	}
+	#homeicon {
+		font-size: 1em;
+	}
+	#tekstvak h3 {
+		text-align: center;
+		font-size: 0.75em;
+	}
+	#star1, #star2, #star3, #star4, #star5 {
+		position: relative;
+		font-size: 2em;
+		top: -10px;
+	}
+	.login {
+		visibility: hidden;
+	}
+	.login2 {
+		visibility: visible;
+	}
+}
+@media screen and (max-width: 855px) {
+	#content {
+		z-index: 1;
+		height: 824px;
+	}
+}
+@media screen and (max-width: 736px) {
+	#hallo, #welkom {
+		font-size: 4em;
+	}
+	header {
+		background-image: url(image/unsplash/roberta-sorge-127446.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	#recept {
+		top: 100px;
+	}
+	#content {
+		width: 70%;
+	}
+	main #content #border #tekstvak h2 {
+		font-size: 1.7em;
+	}
+	.vork, .pan, .lepel, .mes {
+		display: none;
+	}
+}
+@media screen and (max-width: 480px) {
+	body {
+		height: 1900px;
+	}
+	header {
+		height: 50vh;
+	}
+	#content {
+		width: 90%;
+		top: 0;
+	}
+	footer {
+		margin-top: 350px;
+	}
+}

@@ -1,0 +1,953 @@
+<!doctype html>
+<html>
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#da2020">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#da2020">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#da2020">
+<meta charset=utf-8 />
+<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+<head>
+<title> Lekker Pittig </title>
+<link href="style.css" type="text/css" rel="stylesheet" media="screen"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="jquery/jquery-2.1.1.min.js"></script>
+	<script>
+    $(document).ready(function(){
+		
+		
+		
+	
+		var ham = 'unclicked';
+		var star = 'unclicked';
+	
+		$('.ham').click(function(){
+            if (ham == 'unclicked'){
+								ham = 'clicked';
+								$('.nav').animate({height: '330px'}, 1000);
+								$('.ul').animate({height: '330px'}, 1000);
+			}
+                     else { 
+						 ham = 'unclicked';
+						 $('.nav').animate({height: '30px'}, 1000);
+						 $('.ul').animate({height: '50px'}, 1000);
+                    }
+    	});
+		
+		
+		$('.eend').click(function(){	
+			if (   $('.eend2').attr('src') == 'icon/duck-256.png'){
+				$('.eend2').attr('src', 'icon/duck-256(black).png');
+				$(this).css("background-color", "white");
+//				$('.article1').html(   $('#tekstvak').find('.article1').html() );
+				$('.article2').css("display", "none");
+				$('.article3').css("display", "none");
+				$('.article4').css("display", "none");
+				$('.article5').css("display", "none");
+				$('.article6').css("display", "none");
+				$('.article7').css("display", "none");
+				$('.article1').css("display", "block");
+				$('#content').css("height", "900px");
+				$('.haas2').attr('src', 'icon/black-rabbit-512(orange).png');
+				$('.haas').css("background-color", "black");
+				$('.hert2').attr('src', 'icon/deer-icon-md(orange).png');
+				$('.hert').css("background-color", "black");
+				$('.zwijn2').attr('src', 'icon/pig(orange).png');
+				$('.zwijn').css("background-color", "black");
+				$('.parelhoen2').attr('src', 'icon/harrysladdertole00londiala_0062b(orange).png');
+				$('.parelhoen').css("background-color", "black");
+				$('.konijn2').attr('src', 'icon/bunnyicon(orange).png');
+				$('.konijn').css("background-color", "black");
+				$('.struisvogel2').attr('src', 'icon/27538-200(orange).png');
+				$('.struisvogel').css("background-color", "black");
+			}
+			else {
+				
+			}
+		});
+		
+		
+		$('.haas').click(function(){
+			if (   $('.haas2').attr('src') == 'icon/black-rabbit-512(orange).png'){
+				$('.haas2').attr('src', 'icon/black-rabbit-512.png');
+				$(this).css("background-color", "white");
+//				$('.article1').html(   $('#tekstvak').find('.article2').html() );
+				
+				$('.article1').css("display", "none");
+				$('.article3').css("display", "none");
+				$('.article4').css("display", "none");
+				$('.article5').css("display", "none");
+				$('.article6').css("display", "none");
+				$('.article7').css("display", "none");
+				$('.article2').css("display", "block");
+				$('#content').css("height", "2300px");
+				$('.eend2').attr('src', 'icon/duck-256.png');
+				$('.eend').css("background-color", "black");
+				$('.hert2').attr('src', 'icon/deer-icon-md(orange).png');
+				$('.hert').css("background-color", "black");
+				$('.zwijn2').attr('src', 'icon/pig(orange).png');
+				$('.zwijn').css("background-color", "black");
+				$('.parelhoen2').attr('src', 'icon/harrysladdertole00londiala_0062b(orange).png');
+				$('.parelhoen').css("background-color", "black");
+				$('.konijn2').attr('src', 'icon/bunnyicon(orange).png');
+				$('.konijn').css("background-color", "black");
+				$('.struisvogel2').attr('src', 'icon/27538-200(orange).png');
+				$('.struisvogel').css("background-color", "black");
+			}
+			else {
+				
+			}
+		});
+		$('.hert').click(function(){
+			if (   $('.hert2').attr('src') == 'icon/deer-icon-md(orange).png'){
+				$('.hert2').attr('src', 'icon/deer-icon-md.png');
+				$(this).css("background-color", "white");
+//				$('article').html(   $('#tekstvak').find('.article3').html() );
+				$('.article2').css("display", "none");
+				$('.article1').css("display", "none");
+				$('.article4').css("display", "none");
+				$('.article5').css("display", "none");
+				$('.article6').css("display", "none");
+				$('.article7').css("display", "none");
+				$('.article3').css("display", "block");
+				$('#content').css("height", "3000px");
+				$('.eend2').attr('src', 'icon/duck-256.png');
+				$('.eend').css("background-color", "black");
+				$('.haas2').attr('src', 'icon/black-rabbit-512(orange).png');
+				$('.haas').css("background-color", "black");
+				$('.zwijn2').attr('src', 'icon/pig(orange).png');
+				$('.zwijn').css("background-color", "black");
+				$('.parelhoen2').attr('src', 'icon/harrysladdertole00londiala_0062b(orange).png');
+				$('.parelhoen').css("background-color", "black");
+				$('.konijn2').attr('src', 'icon/bunnyicon(orange).png');
+				$('.konijn').css("background-color", "black");
+				$('.struisvogel2').attr('src', 'icon/27538-200(orange).png');
+				$('.struisvogel').css("background-color", "black");
+			}
+			else {
+				
+			}
+			});
+		$('.konijn').click(function(){
+			if (   $('.konijn2').attr('src') == 'icon/bunnyicon(orange).png'){
+				$('.konijn2').attr('src', 'icon/bunnyicon.png');
+				$(this).css("background-color", "white");
+//				$('article').html(   $('#tekstvak').find('.article3').html() );
+				$('.article2').css("display", "none");
+				$('.article1').css("display", "none");
+				$('.article3').css("display", "none");
+				$('.article5').css("display", "none");
+				$('.article6').css("display", "none");
+				$('.article7').css("display", "none");
+				$('.article4').css("display", "block");
+				$('#content').css("height", "2500px");
+				$('.eend2').attr('src', 'icon/duck-256.png');
+				$('.eend').css("background-color", "black");
+				$('.haas2').attr('src', 'icon/black-rabbit-512(orange).png');
+				$('.haas').css("background-color", "black");
+				$('.zwijn2').attr('src', 'icon/pig(orange).png');
+				$('.zwijn').css("background-color", "black");
+				$('.parelhoen2').attr('src', 'icon/harrysladdertole00londiala_0062b(orange).png');
+				$('.parelhoen').css("background-color", "black");
+				$('.hert2').attr('src', 'icon/deer-icon-md(orange).png');
+				$('.hert').css("background-color", "black");
+				$('.struisvogel2').attr('src', 'icon/27538-200(orange).png');
+				$('.struisvogel').css("background-color", "black");
+			}
+			else {
+				
+			}
+			});
+		$('.parelhoen').click(function(){
+			if (   $('.parelhoen2').attr('src') == 'icon/harrysladdertole00londiala_0062b(orange).png'){
+				$('.parelhoen2').attr('src', 'icon/harrysladdertole00londiala_0062b.png');
+				$(this).css("background-color", "white");
+//				$('article').html(   $('#tekstvak').find('.article3').html() );
+				$('.article2').css("display", "none");
+				$('.article1').css("display", "none");
+				$('.article4').css("display", "none");
+				$('.article3').css("display", "none");
+				$('.article6').css("display", "none");
+				$('.article7').css("display", "none");
+				$('.article5').css("display", "block");
+				$('#content').css("height", "3600px");
+				$('.eend2').attr('src', 'icon/duck-256.png');
+				$('.eend').css("background-color", "black");
+				$('.haas2').attr('src', 'icon/black-rabbit-512(orange).png');
+				$('.haas').css("background-color", "black");
+				$('.zwijn2').attr('src', 'icon/pig(orange).png');
+				$('.zwijn').css("background-color", "black");
+				$('.konijn2').attr('src', 'icon/bunnyicon(orange).png');
+				$('.konijn').css("background-color", "black");
+				$('.hert2').attr('src', 'icon/deer-icon-md(orange).png');
+				$('.hert').css("background-color", "black");
+				$('.struisvogel2').attr('src', 'icon/27538-200(orange).png');
+				$('.struisvogel').css("background-color", "black");
+			}
+			else {
+				
+			}
+		});
+		$('.struisvogel').click(function(){
+			if (   $('.struisvogel2').attr('src') == 'icon/27538-200(orange).png'){
+				$('.struisvogel2').attr('src', 'icon/27538-200.png');
+				$(this).css("background-color", "white");
+//				$('article').html(   $('#tekstvak').find('.article3').html() );
+				$('.article2').css("display", "none");
+				$('.article1').css("display", "none");
+				$('.article4').css("display", "none");
+				$('.article5').css("display", "none");
+				$('.article3').css("display", "none");
+				$('.article7').css("display", "none");
+				$('.article6').css("display", "block");
+				$('#content').css("height", "3000px");
+				$('.eend2').attr('src', 'icon/duck-256.png');
+				$('.eend').css("background-color", "black");
+				$('.haas2').attr('src', 'icon/black-rabbit-512(orange).png');
+				$('.haas').css("background-color", "black");
+				$('.zwijn2').attr('src', 'icon/pig(orange).png');
+				$('.zwijn').css("background-color", "black");
+				$('.parelhoen2').attr('src', 'icon/harrysladdertole00londiala_0062b(orange).png');
+				$('.parelhoen').css("background-color", "black");
+				$('.konijn2').attr('src', 'icon/bunnyicon(orange).png');
+				$('.konijn').css("background-color", "black");
+				$('.hert2').attr('src', 'icon/deer-icon-md(orange).png');
+				$('.hert').css("background-color", "black");
+			}
+			else {
+				
+			}
+			});
+		$('.zwijn').click(function(){
+			if (   $('.zwijn2').attr('src') == 'icon/pig(orange).png'){
+				$('.zwijn2').attr('src', 'icon/pig.png');
+				$(this).css("background-color", "white");
+//				$('article').html(   $('#tekstvak').find('.article3').html() );
+				$('.article2').css("display", "none");
+				$('.article1').css("display", "none");
+				$('.article4').css("display", "none");
+				$('.article5').css("display", "none");
+				$('.article6').css("display", "none");
+				$('.article3').css("display", "none");
+				$('.article7').css("display", "block");
+				$('#content').css("height", "900px");
+				$('.eend2').attr('src', 'icon/duck-256.png');
+				$('.eend').css("background-color", "black");
+				$('.haas2').attr('src', 'icon/black-rabbit-512(orange).png');
+				$('.haas').css("background-color", "black");
+				$('.hert2').attr('src', 'icon/deer-icon-md(orange).png');
+				$('.hert').css("background-color", "black");
+				$('.parelhoen2').attr('src', 'icon/harrysladdertole00londiala_0062b(orange).png');
+				$('.parelhoen').css("background-color", "black");
+				$('.konijn2').attr('src', 'icon/bunnyicon(orange).png');
+				$('.konijn').css("background-color", "black");
+				$('.struisvogel2').attr('src', 'icon/27538-200(orange).png');
+				$('.struisvogel').css("background-color", "black");
+			}
+			else {
+				
+			}
+		});	
+		
+		
+var Student = '#name';
+		
+		
+/* $('#submit').click(function(){
+		
+if (Student === 'Nick'){
+   window.alert("You will anoy others.");
+}
+
+else if (Student === 'Chris'){
+   window.alert("You will become great if you believe in yourself.");
+}
+
+else if (Student === 'Austine'){
+   window.alert("You will find a thing. It may be important.");
+}
+
+else if (Student === 'Dicky'){
+   window.alert("Don’t eat any Chinese food today or you’ll be sick!");
+}
+	
+else if (Student === 'Ilhame'){
+   window.alert("You will feel sick at the end of the day.");
+}
+	
+else if (Student === 'Sander'){
+   window.alert("You will give my creater a good grade.");
+}
+	
+else if (Student === 'Kevin'){
+   window.alert("Look before you leap. Or wear a parachute.");
+}
+	
+else if (Student === 'Meryem'){
+   window.alert("There's someone who's gonna hurt you.");
+}
+	
+else if (Student === 'Mark'){
+   window.alert("Someone will thank you.");
+}
+	
+else { 
+	window.alert("Sorry, but I don't know that name."); 
+}
+		
+    }); */
+	
+	});
+</script>
+<style>
+	#content {
+		height: 900px;
+	}
+	.article2, .article3, .article4, .article5, .article6, .article7 {
+		display: none;
+	}
+	#recept {
+		text-align: center;
+		position: relative;
+	}
+	.eend {
+		width: 70px;
+		height: 70px;
+		overflow: hidden;
+		display: inline-table;
+		position: relative;
+		background-color: white;
+		border-radius: 50%;
+	}
+	.haas, .konijn, .parelhoen, .hert, .zwijn, .struisvogel {
+		width: 70px;
+		height: 70px;
+		overflow: hidden;
+		display: inline-table;
+		position: relative;
+		background-color: black;
+		border-radius: 50%;
+	}
+	#icon:hover {
+		background-color: white;
+	}
+	#icon img {
+		margin-top: 15px;
+	}
+	@media screen and (max-width: 1024px) {
+		#recept {
+			right: 0px;
+		}
+		#icon {
+			margin-right: 30px;
+		}
+	}
+</style>
+</head>
+<body>
+    <div id="container">
+		<nav class="nav">
+				<ul class="ul">
+					<a href="index.html"><img class="logo" src="icon/logo%20lekker%20pittig%20def.png"/></a>
+					<div class="ham">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+					</div>
+					<li class="login2"><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+					<li id="navknop" class="login"><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+					<li id="navknop" class="home"><a href="index.html">Home</a></li>
+					<li id="navknop" class="contact"><a href="contact.html">Contact</a></li>
+					<li id="navknop" class="disclaimer"><a href="disclaimer.html">Disclaimer</a></li>
+					<li id="navknop" class="recept"><a href="recept.html">Recepten</a></li>
+					<li id="navknop" class="aboutus"><a href="kant-klaar.html">Kant &#38; Klaar</a></li>
+					<li id="navknop" class="aboutus"><a href="kruiden.html">Kruiden</a></li>
+				</ul>
+		</nav>
+        <header>
+			<center>
+			<div id="recept">
+				<div id="icon" class="eend"><img class="eend2" width="40px" src="icon/duck-256(black).png" /></div>
+				<div id="icon" class="haas"><img class="haas2" width="40px" src="icon/black-rabbit-512(orange).png" /></div>
+				<div id="icon" class="hert"><img class="hert2" width="40px" src="icon/deer-icon-md(orange).png" /></div>
+				<div id="icon" class="konijn"><img class="konijn2" width="40px" src="icon/bunnyicon(orange).png" /></div>
+				<div id="icon" class="parelhoen"><img class="parelhoen2" width="40px" src="icon/harrysladdertole00londiala_0062b(orange).png" /></div>
+				<div id="icon" class="struisvogel"><img class="struisvogel2" width="40px" src="icon/27538-200(orange).png" /></div>
+				<div id="icon" class="zwijn"><img class="zwijn2" width="40px" src="icon/pig(orange).png" /></div>
+			</div>
+			</center>
+        </header>
+		<main>
+			<div id="content">
+				<div id="border">
+					<div id="tekstvak">
+						<i id="homeicon" class="fa fa-cutlery" aria-hidden="true"></i>
+						<h1 class="h1">Recepten</h1>
+						<article class="article1">
+						<h2>Eend, Canard à l’orange</h2>
+						<h3>
+							<center>Ingrediënten:</center>
+							<br>
+• 1 jonge eend (ca 2 kg, panklaar),
+• 3-4 el olie
+• 100 g boter
+• 1/2 l sinaasappelsap
+• 2-3 el sinaasappellikeur
+• 1 el honing
+• 2 onbehandelde sinaasappelen
+• zout
+• vers gemalen peper
+• basilicumbladeren voor de decoratie
+						</h3>
+							<br>
+							<br>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							 De eend met zout en peper inwrijven en bij circa 200 graden ongeveer 1 uur braden. Na 30 minuten sinaasappelsap, sinaasappellikeur en honing bij de eend doen. De eend elke 10 minuten met de vloeistof begieten zodat het aroma in het vlees indringt en de huid lekker knapperig wordt. Na afloop van de gaartijd de eend uit de pan nemen en warm wegzetten. De saus de helft inkoken tot het
+een siroopachtige substantie wordt. De boter bij de saus doen en met een garde roeren. Met zout en peper op smaak brengen. Dunne schilletjes van een onbehandelde sinaasappel in de saus doen. De eend met een deel van de saus en met basilicum en sinaasappelplakjes gedecoreerd serveren. De rest van de saus apart serveren. Lekker met wortels en champignons, zilveruitjes en gegratineerde aardappelen.
+
+						</h3>
+						<br>
+						</article>
+						<article class="article2">
+						<h2>Haas, Hazenrugfilets met mosterdsaus</h2>
+						<h3>
+							<center>Ingrediënten:</center>
+							<br>
+• 3 el. boter, geklaarde 
+• 2 dl. wildfond 
+• 0.5 dl. vermouth, droge 
+• 0.5 dl. wijn, witte 
+• 3 el. mosterd 
+• 3 el. koksroom 
+• Peper 
+• Zout
+						</h3>
+							<br>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							 Neem voor de droge vermouth bij voorkeur een Franse witte droge vermouth als Noilly Prat en voor de mosterd bij voorkeur een zachte. Koksroom is een gepasteuriseerde room die een hoge temperatuur kan verdragen in ideaal is om sauzen te binden. 
+
+Laat voor de saus de wildfond met vermouth en wijn inkoken tot er eenderde overblijft. Voeg de mosterd en de room toe. 
+
+Bak de hazenfilets rondom goudbruin in de boter. Draai het vuur laag en laat ze nog circa 4 minuten aan elke kant bakken. 
+
+Bestrooi ze met peper en zout. Verwarm de saus en schenk deze voor het serveren over het vlees. 
+<br>
+Wijnadvies: Rhône
+
+						</h3>
+						<div id="line1">
+							<div id="dot"></div>
+							<div id="dot"></div>
+						</div>
+						<h2>Haas, Hazenrug met frambozenconfituur</h2>
+						<h3>
+							<center>Ingrediënten:</center>
+							<br>
+• 2 hazenruggen
+• 1 klontje boter
+• 0,25 l. wildfond
+• 0,25 l. rode wijn
+• 4 el. frambozenazijn
+• 1 el. frambozenjam
+• 1 el. suiker
+• 4 jeneverbessen
+• laurier 
+• peper en zout 
+• tijm 
+						</h3>
+							<br>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							 Voorverwarm de oven op 180°C. Bak de hazenruggen in een pan mooi bruin langs alle kanten, kruid met peper en zout. Zet de hazenruggen 10 minuten in de oven. Hou ze daarna warm (eventueel afdekken met aluminiumfolie). Blus de pan met de frambozenazijn, jam, wijn, wildfond, tijm, laurier en jeneverbessen. Laat voor de helft inkoken. Kruid de saus naar eigen smaak. Snijd de hazenruggen in sneetjes en overgiet met de saus.
+ 
+						</h3>
+						<div id="line1">
+							<div id="dot"></div>
+							<div id="dot"></div>
+						</div>
+						<h2>Haas, Hazenpeper</h2>
+						<h3>
+							<center>Ingrediënten:</center>
+							<br>
+• 4 hazenachterbouten 
+• 50 g boter of margarine 
+• 1 grote ui 
+• 2 tenen knoflook 
+• 100 g spekreepjes 
+• 2 stengels bleekselderij 
+• 2 1/2 dl rode wijn 
+• 1 pot wildfond
+• 3 takjes tijm 
+• 2 laurierblaadjes 
+• 2 kruidnagels 
+• zout 
+• versgemalen peper
+						</h3>
+							<br>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							 Ui en knoflook pellen en fijn snipperen. Bleekselderij wassen, schoonmaken en in kleine stukjes snijden. Haas bestrooien met zout en peper. In braadpan boter verhitten. Spekreepjes ca. 3 minuten zachtjes bakken. Met schuimspaan op bord scheppen. In bakvet haas rondom bruin bakken. Met schuimspaan naast spekjes leggen. In bakvet ui en bleekselderij ca. 3 minuten zachtjes fruiten. Wijn en fond toevoegen en aan de kook brengen. Stukken haas erin leggen. Spekjes, tijm, laurier en kruidnagels toevoegen. Met deksel schuin op pan haas in ca. 2 uur zachtjes gaar stoven. Haas met schuimspaan in schaal leggen en warm houden. Op hoog vuur vocht inkoken tot een dunne saus. Saus over haas schenken. Serveren met aardappelpuree en rode kool.
+
+						</h3>
+							<br>
+						</article>
+						<article class="article3">
+						<h2>Hert, Hertenbiefstuk met paddestoelen en tagliatelle</h2>
+						<h3>
+							<center>Ingrediënten:</center><br/>
+							<br>
+• 4 hertenbiefstukjes
+• 100 gr boter 
+• 1 sjalotje 
+• 1 dl slagroom 
+• 1 pot wildfond 
+• 1 dl madeira 
+• 1 dl port 
+• 1/2 dl cognac
+  • 300 gr tagliatelle 
+• 2 plakjes ontbijtspek 
+• 4 takjes peterselie 
+• 250 gr kastanjechampignons 
+• 150 gr oesterzwammen 
+• 2 el bindmiddel
+• zout
+• peper
+						</h3>
+							<br>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							 In pan fond, madeira, port en cognac op hoog vuur in ca. 10 - 15 min tot helft laten inkoken. In pan met ruim water tagliatelle in 10 min. beetgaar koken. In vergiet onder koud stromend water laten afspoelen laten uitlekken. Sjalotje snipperen. Spek in dunne reepjes snijden. Peterselie fijnknippen. Paddestoelen schoonvegen met keukenpapier. Grote oesterzwammen in vieren snijden.
+Biefstukjes op kamertemperatuur laten komen. In pan slagroom voorverwarmen. Tagliatelle toevoegen en zachtjes meeverwarmen, af en toe omscheppen. Biefstukjes droogdeppen met keukenpapier en inwrijven met zout en peper. In koekenpan 50 gr boter verhitten. Biefstukjes in ca. 2 a 3 min. rose bakken, halverwege keren. Uit pan onder aluminiumfolie warmhouden. 
+In overgebleven bakvet sjalot en spek max. 1 min bakken. Paddestoelen toevoegen en al omscheppend in ca 4 min bruin bakken. Saus opnieuw zachtjes verwarmen en bindmiddel erdoor roeren. Rest van boter in klontjes snijden. Van vuur af klontjes boter een voor een door saus kloppen. Biefstukjes dwars op draad in plakjes snijden. Vleessappen door saus roeren. In midden van borden bergje tagliatelle scheppen. Peterselie door paddestoelen scheppen. Paddestoelen over tagliatelle verdelen. Aan onderkant plakjes biefstuk rangschikken. Saus over tagliatelle, paddestoelen en biefstuk scheppen.
+
+						</h3>
+						<div id="line1">
+							<div id="dot"></div>
+							<div id="dot"></div>
+						</div>
+							<h2>Hert, Hertencarpaccio met gefrituurde knolselderij</h2>
+						<h3>
+							<center>Ingrediënten:</center><br/>
+							<br>
+• 4 porties hertencarpaccio
+• 150 gr knolselderij in kleine blokjes 
+• 100 gr knolselderij in fijne reepjes 
+• gemengde sla soorten 
+• 1 el gebrande pijnboompitten 
+• 1 el gehakte kervel 
+• 1 el wildfond 
+• 1 tl mosterd (dijon fine) 
+• 1 el balsamico azijn 
+• 1/2 dl hazelnootolie 
+• 1/2 dl zonnebloemolie 
+• zout
+• peper
+						</h3>
+							<br>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							 Kook de selderijblokjes beetgaar, laat ze daarnaafkoelen (door ze koud te spoelen). Maak van de olien, de azijn, mosterd, fond, zout en peper een vinaigrette en maak hiermee de selderijblokjes aan. Frituur de knolselderijreepjes in de olie op 160 graden mooi krokant. Leg op de borden de hertencarpaccio met daarop de aangemaakte selderij. Giet hierover de vinaigrette. Garneer de carpaccio met een klein bosje gemengde salade, pijnboompitten, kervel en de gefrituurde knolselderij.
+						</h3>
+						<div id="line1">
+							<div id="dot"></div>
+							<div id="dot"></div>
+						</div>
+							<h2>Hert, Hertenbiefstuk met kastanjechampignons en aspergepunten</h2>
+						<h3>
+							<center>Ingrediënten:</center><br/>
+							<br>
+• 2 hertenbiefstukjes 
+• 3 eetlepels oosterse roerbakolie 
+• 1 rode ui 
+• 1 teentje knoflook 
+• 1/2 pot wildfond (a 380 ml) 
+• 2-3 el. sojasaus 
+• 100 g groene aspergetips 
+• 250 g kastanjechampignons 
+• 2 cm gemberwortel 
+• 1 rode peper 
+• 1/2 el. suiker
+						</h3>
+							<br>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							Biefstuk dwars op draad in plakjes snijden en in ca. 10 minuten op kamertemperatuur laten komen. Plakje van onderkant aspergepunten afsnijden. Ui pellen en in dunne partjes snijden. Knoflook, gember en peper schoonmaken en fijn hakken. Champignons schoonvegen, grote exemplaren halveren. Wok verhitten tot gloeiend heet. Olie over panbodem laten uitvloeien. Knoflook, gember en peper kort roerbakken tot mengsel gaat geuren. Vlees toevoegen en al omscheppend op hoog vuur in ca. 2 minuten rondom bruinbakken. Vlees op warm bord leggen en onder aluminiumfolie warm houden. In bakvet ui en champignons nog ca. 2 minuten roerbakken. Aspergepunten, suiker, fond en sojasaus toevoegen. Op halfhoog vuur ca. 3 minuten verwarmen, tot ongeveer helft laten inkoken. Vlees erdoor mengen en nog 2 minuten meewarmen. Serveren met aardappelpuree.
+<br><br/>
+Wijnadvies: rosé
+
+						</h3>
+							<br>
+						</article>
+						<article class="article4">
+						<h2>Konijn, Konijnenbout met mosterd en tagliatelle met pastis</h2>
+						<h3>
+							<center>Ingrediënten:</center><br/>
+							<br>
+• 4 Konijnenbouten 
+• 30 gr. dijonmosterd
+• 200 gr. tagliatelle 
+• 1.5 dl. pastis 
+• 1 el. olie 
+• 10 gr. boter 
+• 2.5 dl. wildfond 
+• Dille 
+• Tomaatblokje 
+• Steranijs 
+• Water 
+• Zout
+						</h3>
+							<br>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							 Gebruik bij voorkeur de achterbouten van het konijn. 
+
+Verwarm de oven voor tot 200 graden Celsius. Smeer intussen de konijnenbouten in met de mosterd. Houd echter nog een beetje mosterd achter de hand. 
+
+Laat de konijnenbouten in de oven in circa 25 minuten gaar worden. 
+
+Kook de tagliatelle in kokend water met zout en olie beetgaar. 
+
+Laat de tagliatelle uitlekken en roer er de boter door. Verwarm de rest van de pastis in een soeplepel, schenk het vocht over de konijnenbouten en flambeer de bouten. Verdeel de tagliatelle over warme borden en leg de konijnenbouten hierop. 
+
+Breng de fond aan de kook en breng op smaak met de rest van de mosterd. 
+
+Schep de saus rond de tagliatelle en garneer het gerecht met dille, tomaatblokjes en steranijs.
+ 
+						</h3>
+						<div id="line1">
+							<div id="dot"></div>
+							<div id="dot"></div>
+						</div>
+							<h2>Konijn, Konijn met gevulde champignons en basilicumsaus</h2>
+						<h3>
+							<center>Ingrediënten:</center><br/>
+							<br>
+• 1 stuk konijn, in stukken 
+• 12 grote champignons
+• 500 gr. diepvriesspinazie 
+• 1 bosje basilicum, verse, fijngehakte 
+• 2.5 dl. wijn, witte 
+• 2 stuks sjalotten, gesnipperde 
+• 100 gr. room 
+• 1 stuk eierdooier 
+• Olijfolie 
+• Peper 
+• Zout
+						</h3>
+							<br>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							 Bereiding konijn: verhit de olijfolie en kleur de stukken konijn bruin. Kruid ze met peper en zout en leng aan met de helft van de witte wijn. Laat alles 60 minuten sudderen met het deksel op de pan. Haal het konijn uit de pan en houd het warm. 
+
+Bereiding saus: Voeg de sjalotjes bij de jus en laat de saus al roerend 3 minuten inkoken. Blus de saus met de rest van de wijn. 
+
+Klop de eierdooier los met room en basilicum. Voeg deze bij de uitjes en maak er een glad sausje van. Leg het konijn in de saus en laat alles zachtjes opwarmen. 
+
+Bereiding groenten: Maak de champignons schoon en verwijder de steeltjes. Kruid de hoedjes met peper en zout en druppel er een beetje olie in. Zet ze gedurende 7 minuten onder de grill. Stoof ondertussen de bladspinazie. Serveer een stuk konijn met saus op ieder bord. Leg er 3 champignonhoedjes bij en vul ze met de bladspinazie
+ 
+						</h3>
+						<div id="line1">
+							<div id="dot"></div>
+							<div id="dot"></div>
+						</div>
+							<h2>Konijn, Konijn met mosterdsaus</h2>
+						<h3>
+							<center>Ingrediënten:</center><br/>
+							<br>
+• 1 konijn (keukenklaar in 12 delen, circa 1,5 kg),
+• 2 el. olie
+• 3 el. hete mosterd
+• 4 dl. droge witte wijn (bijvoorbeeld Muscadet)
+• 200 gr crème fraîche
+• 1 bos verse basilicum
+• zout
+• grof gemalen peper
+						</h3>
+							<br>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							Konijndelen afspoelen en drogen. Mosterd, olie, een halve theelepel zout en 
+peper vermengen. Konijndelen met het mosterdmengsel bestrijken en in een 
+ovenvaste vorm leggen. In een voorverwarmde oven bij 225 graden 
+(hetelucht 200 graden) ongeveer 5 minuten braden. Wijn erbij doen en nog 
+eens 15 minuten bakken. De konijndelen tussendoor met het braadsap vochtig 
+houden. De konijndelen uit de vorm nemen en warm houden. Crème fraîche 
+door het braadsap roeren en aan de kook brengen. Fijngesneden basilicum door de 
+saus roeren en over het vlees gieten. Onmiddellijk serveren. 
+
+Lekker met pasta!
+<br><br/>
+Wijnadvies: Muscadet
+
+						</h3>
+							<br>
+						</article>
+						<article class="article5">
+						<h2>Parelhoen, Parelhoen met wilde paddestoelen</h2>
+						<h3>
+							<center>Ingrediënten:</center><br/>
+							<br>
+• 1 parelhoen
+• boter
+• 8 sjalotten
+• gemengde wilde paddestoelen
+• 1 dl sherry
+• 2 dl blanke fond
+  • 2 el room
+• maïzena
+• kervel
+• peper
+• zout
+						</h3>
+							<br>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							 Ontbeen het parelhoen en bak het langs alle kanten bruin in boter. Kruid met peper en zout. Voeg de hele sjalotten toe, samen met de paddestoelen. Blus het geheel af met sherry, fond en room. Laat dit geheel heel zachtjes 45 minuten koken tot de saus gebonden is. Bind eventueel bij met wat maïzena.
+Serveer met pasta en versier met kervel. 
+<br><br/>
+Wijntip: Cotes du Rhone Villages
+
+						</h3>
+						<div id="line1">
+							<div id="dot"></div>
+							<div id="dot"></div>
+						</div>
+							<h2>Parelhoen, Gevulde parelhoen à la Ménagère</h2>
+						<h3>
+							<center>Ingrediënten:</center><br/>
+							<br>
+• 1 parelhoen panklaar
+• 100 gr kalfsvlees
+• 100 gr mager varkensvlees
+• 50 gr vers vet spek
+• 60 g gerookt vet spek in plakjes
+• 15 g boter
+• 1 ei
+• 2 cl cognac
+• 1 blikje truffelschilfertjes
+• 10 champignons uit blik
+• 4 eetlepels olie
+• 200 gr soepgroente
+• 1/8 l warme vleesbouillon
+• 1/8 l warm water
+• 10 g bloem
+• 1 tl citroensap
+• zout
+• peper versgemalen
+						</h3>
+							<br>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							 Zout de parelhoen van binnen. Draai het kalfsvlees,varkensvlees en het vette spek door de vleesmolen. Maak het aan met ei, cognac, zout en witte peper, de fijngesneden champignons en de kleine gesneden truffelschilfers. Vul de parelhoen met dit mengsel. Steek de opening dicht met een houten prikker. Leg de plakjes spek om de parehoen en maak ze vast met een katoenen draad.
+Verhit de olie in een pan en leg hierin de parelhoen met de schoongemaakte en fijn gesneden soepgroente. Braad de parelhoen in 10 min rondom bruin. Schenk de warme vleesbouillon erbij en doe de deksel op de pan, stoof het ca 45 min of langer. Neem de parelhoen uit de pan en verwijder het spek rondom. Kook het braadvocht los met het warme water en zeef het geheer hierna. Smelt de boter en voeg de bloem erbij, roer dit tot een glad papje. Doe daar de gezeefde jus bij en laat dit binden tot een gladde saus. Breng het op smaak met peper en zout en citroensap. Serveer de saus er apart bij. Lekker met witlof en gekookte aardappeltjes.
+
+ 
+						</h3>
+						<div id="line1">
+							<div id="dot"></div>
+							<div id="dot"></div>
+						</div>
+							<h2>Parelhoen, Gegrilde parelhoenbout met een coulis van paprika en basilicum</h2>
+						<h3>
+							<center>Ingrediënten:</center><br/>
+							<br>
+• 4 parelhoenbouten 
+• 3 rode paprika’s 
+• 1,5 dl olijfolie 
+• 2 el fijn geknipte basilicum 
+• zout
+• peper
+						</h3>
+							<br>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							Verwarm de oven voor op 220°C en leg de paprika’s gehalveerd, ontdaan van zaadjes op het rooster. Laat ze gedurende 15 à 20 minuten bakken, totdat de schil zwart wordt en los laat. Haal de paprika’s uit de oven en pak ze onmiddellijk in huishoudfolie. Af laten koelen en de schil eraf halen. Pureer de paprika’s in de keukenmachine en voeg de olijfolie toe, wrijf de puree vervolgens door een zeef. Voeg zout, peper en fijngeknipte basilicum toe. In koelkast bewaren tot verder gebruik.
+Grill de Parelhoenbout om onder de grill gedurende circa 40 minuten.
+Serveer de Parelhoenbout met de eerder gemaakte coulis van paprika en basilicum 
+ 
+
+						</h3>
+						<div id="line1">
+							<div id="dot"></div>
+							<div id="dot"></div>
+						</div>
+							<h2>Parelhoen, Parelhoenfilet met peer</h2>
+						<h3>
+							<center>Ingrediënten:</center><br/>
+							<br>
+• 4 parelhoenfilets 
+• 1 sjalotje 
+• 4 stevige handperen 
+• 4 el Sauternes (zoete dessertwijn) 
+• 1/2 tl kaneel 
+• 1 el boter 
+• zout
+• peper 
+						</h3>
+							<br>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							Smelt de boter in een pan. Bak het fijngesneden sjalotje glazig, voeg de filets toe en bak ze goudbruin. Voeg de geschilde en in 4 stukken gesneden peren toe, vervolgens de Sauternes, kaneel, zout en peper. Laat gedurende 15 minuten zachtjes stoven op een laag vuurtje.
+
+						</h3>
+						<div id="line1">
+							<div id="dot"></div>
+							<div id="dot"></div>
+						</div>
+							<h2>Parelhoen, Parelhoen à l’orange</h2>
+						<h3>
+							<center>Ingrediënten:</center><br/>
+							<br>
+• 4 parelhoenbouten 
+• 3 rode paprika’s 
+• 1,5 dl olijfolie 
+• 2 el fijn geknipte basilicum 
+• zout
+• peper
+						</h3>
+							<br>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							Verwarm de oven voor op 175°C. Meng in een kom het sap van een sinaasappel en de honing en wrijf de parelhoen met het mengsel in. Voeg wat peper toe. Plaats de parelhoen in gedurende 60 minuten in de oven en besprenkel het vlees regelmatig met de sinaasappel-honing melange. Rasp reepjes van de schil van de sinaasappels. Laat de reepjes koken in een halve liter water en los de suiker hierin op. Laat de reepjes uitlekken. Leg 10 minuten voor het einde van de baktijd de reepjes sinaasappelschil rondom de parelhoen.
+
+						</h3>
+							<br>
+						</article>
+						<article class="article6">
+						<h2>Struisvogel, Struisvogelbiefstuk met een tomaten/wijn saus</h2>
+						<h3>
+							<center>Ingrediënten:</center><br/>
+							<br>
+• 4 struisvogelbiefstukken of -tournedos
+• 3 uien
+• 10 st knoflooktenen 
+• 1 espresso kopje Cabernet rouge
+• 2 el. ketjap manis
+• 1 klein blikje gepelde tomaten
+• 1 tl. suiker
+• gemalen gember
+• 1 laurierblad
+
+						</h3>
+							<br>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							 Verhit de olie in de pan en voeg alle ingrediënten, behalve het struisvogelvlees, toe. Zet dit mengsel even aan in de pan, en laat het vervolgens afkoelen. Pureer het geheel tot een gladde saus. Plaats de struisvogelbiefstukken of -tournedos in een ovenvaste schaal en bedek deze met de saus. Doe dit geheel vervolgens in een voorverwarmde oven op 150 graden gedurende één uur. Na dertig minuten de struisvogel omdraaien Lekker met pandanrijst en haricots verts.
+ 
+
+						</h3>
+						<div id="line1">
+							<div id="dot"></div>
+							<div id="dot"></div>
+						</div>
+							<h2>Struisvogel, Salade met struisvogel en koriander/sinaasappeldressing (voorgerecht)
+</h2>
+						<h3>
+							<center>Ingrediënten:</center><br/>
+							<br>
+• 2 kleine struisvogelbiefstukken
+• 20 gr boter
+• 2 sinaasappels
+• 1 dl gevogeltefond
+• 3 el gehakte verse koriander
+• 3 el notenolie.
+• 100 gr veldsla
+• 100 gr rucola
+• 25 gr pecannoten
+• peper
+• zout
+
+						</h3>
+							<br>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							Schil de sinaasappels dik (het wit meeschillen) en snij de partjes tussen de vliezen uit. Vang het sap op en pers het resterende sap uit de sinaasappels. Doe het sap met de fond in een steelpan en laat dit 3 minuten inkoken. Af laten koelen. Hak de pecannoten grof. Voeg de koriander en notenolie toe aan de afgekoelde dressing. Breng de dressing op smaak met peper en zout. Vermeng de veldsla en rucola met de helft van de dressing. Bak de struisvogel biefstukken in de boter in 4-5 minuten van buiten bruin en van binnen rosé. Haal ze uit de pan, bestrooi ze met peper en zout en snij ze schuin in plakjes. Schenk de rest van de marinade bij het bakvet en roer de aanbaksels los. Leg de salade op de borden. Verdeel de partjes sinaasappel en de struisvogel plakjes over de salade. Schenk de warme dressing erover en bestrooi tot slot met de gehakte pecannoten.
+
+
+ 
+						</h3>
+						<div id="line1">
+							<div id="dot"></div>
+							<div id="dot"></div>
+						</div>
+							<h2>Struisvogel, Struisvogelbrochettes met basilicumboter</h2>
+						<h3>
+							<center>Ingrediënten:</center><br/>
+							<br>
+• 4 struisvogelbrochettes
+• 200 gr. boter 
+• 2 tomaten
+• 1 el. ketchup
+• 10 blaadjes verse basilicum
+• peper en zout 
+• zakje slamix 
+• 1 el. balsamicoazijn
+
+						</h3>
+							<br>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							Ontvel en ontpit de tomaten. Mix ze samen met de ketchup, azijn, boter en de basilicumblaadjes. Leg de boter op een vel aluminiumfolie en rol het op in de vorm van een worst. Laat de boter 2 uur hard worden in de koelkast. Bak of grill de brochettes. Kruid met peper en zout. Snijd de harde rol boeter in plakken. Serveer de brochettes op een bedje van sla en laat de plakjes boter op de brochettes smelten.
+
+						</h3>
+						<div id="line1">
+							<div id="dot"></div>
+							<div id="dot"></div>
+						</div>
+							<h2>Struisvogel, Struisvogelfilet met Port</h2>
+						<h3>
+							<center>Ingrediënten:</center><br/>
+							<br>
+• 800 gr. struisvogelfilet (voor 4 personen)
+• 80 gr. boter
+• peper en zout 
+• porto 
+• room 
+						</h3>
+							<br>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							Bak de stuisvogelfilet in 80 gr. boter, voeg peper en zout toe. Blus de jus met Port en voeg er room aan toe. Snij het vlees in dunne plakjes en leg het op een schotel. Gietde saus er overheen. Serveersuggestie: knolselderijpuree en bosbessen.
+
+						</h3>
+							<br>
+						</article>
+						<article class="article7">
+						<h2>Zwijn, </h2>
+						<h3>
+							<center>Ingrediënten:</center><br/>
+							<br>
+							(geen)
+						</h3>
+						<div id="line1">
+							<div id="dot"></div>
+							<div id="dot"></div>
+						</div>
+						<h3>
+							<center>Bereidingswijze:</center><br/>
+							(geen)
+
+						</h3>
+						<br>
+						</article>
+					</div>
+					<div class="lp">LP</div>
+				</div>
+			</div>
+			<img class="lepel" src="image/PNG/lepel.png" min-width="150px"/>
+			<img class="vork" src="image/PNG/vork.png" min-width="90px"/>
+			<img class="pan" src="image/PNG/pan.png" min-width="350px"/>
+			<img class="mes" src="image/PNG/mes.png" min-width="160px"/>
+		</main>
+        <footer>
+			<a href="#" class="fb"><img src="icon/facebook-icon-preview-1.png" /></a>
+			<a href="#" class="insta"><img src="icon/instagram-logo-vector-download-400x400.png" /></a>
+        </footer>
+    </div>
+	
+	<script>
+	
+</script>
+</body>
+</html>

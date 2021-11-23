@@ -1,0 +1,234 @@
+<?php
+
+
+if(isset($_POST['submit'])){
+    
+	$to = "516417@student.glu.nl";
+	
+	$headers = "From: ". $to;
+	$name = $_POST['name'];
+    $select = $_POST['select'];
+    $rate = $_POST['rate'];
+    
+    
+    $subject_me = "Rate van:". "\n" .$name. "\n";
+	$message_me = 
+        "\n"
+        ."Rating:.". "\n"
+        ."\n"
+        ."\n"
+        ."$rate  ";
+	
+	//print_r($_POST);
+	//print_r($_FILES);
+	
+	//$tmp = $_FILES['file']['tmp_name'];
+	//$file_location = 'ingeleverd_door_klanten/'.$_FILES['file']['name'];
+	//move_uploaded_file($tmp, $file_location);	
+    
+    mail($to, $subject_me, $message_me);
+    
+
+	header('Location: thank-you.php');
+
+    }
+
+?>
+
+<!doctype html>
+<html>
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#da2020">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#da2020">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#da2020">
+<meta charset=utf-8 />
+<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+<head>
+<title> Lekker Pittig </title>
+<link href="style.css" type="text/css" rel="stylesheet" media="screen"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="jquery/jquery-2.1.1.min.js"></script>
+	<script>
+    $(document).ready(function(){
+		
+		
+		
+	
+		var ham = 'unclicked';
+		var star = 'unclicked';
+	
+		$('.ham').click(function(){
+            if (ham == 'unclicked'){
+								ham = 'clicked';
+								$('.nav').animate({height: '330px'}, 1000);
+								$('.ul').animate({height: '330px'}, 1000);
+			}
+                     else { 
+						 ham = 'unclicked';
+						 $('.nav').animate({height: '30px'}, 1000);
+						 $('.ul').animate({height: '50px'}, 1000);
+                    }
+    	});
+		
+		
+		$('#hallo').delay(1000);
+		$('#hallo').animate({opacity: '0', top: '40px'}, 3000);
+		$('#welkom').delay(2000);
+		$('#welkom').animate({opacity: '1', top: '-60px'}, 3000);
+		$('#star1').click(function(){$(this).toggleClass('star');
+});
+		$('#star2').click(function(){$(this).toggleClass('star');
+									 $('#star1').toggleClass('star');
+});
+		$('#star3').click(function(){$(this).toggleClass('star');
+									 $('#star1').toggleClass('star');
+									 $('#star2').toggleClass('star');
+});
+		$('#star4').click(function(){$(this).toggleClass('star');
+									 $('#star1').toggleClass('star');
+									 $('#star2').toggleClass('star');
+									 $('#star3').toggleClass('star');
+});
+		$('#star5').click(function(){$(this).toggleClass('star');
+									 $('#star1').toggleClass('star');
+									 $('#star2').toggleClass('star');
+									 $('#star3').toggleClass('star');
+									 $('#star4').toggleClass('star');
+});
+		
+		
+		
+var Student = '#name';
+		
+		
+/* $('#submit').click(function(){
+		
+if (Student === 'Nick'){
+   window.alert("You will anoy others.");
+}
+
+else if (Student === 'Chris'){
+   window.alert("You will become great if you believe in yourself.");
+}
+
+else if (Student === 'Austine'){
+   window.alert("You will find a thing. It may be important.");
+}
+
+else if (Student === 'Dicky'){
+   window.alert("Don’t eat any Chinese food today or you’ll be sick!");
+}
+	
+else if (Student === 'Ilhame'){
+   window.alert("You will feel sick at the end of the day.");
+}
+	
+else if (Student === 'Sander'){
+   window.alert("You will give my creater a good grade.");
+}
+	
+else if (Student === 'Kevin'){
+   window.alert("Look before you leap. Or wear a parachute.");
+}
+	
+else if (Student === 'Meryem'){
+   window.alert("There's someone who's gonna hurt you.");
+}
+	
+else if (Student === 'Mark'){
+   window.alert("Someone will thank you.");
+}
+	
+else { 
+	window.alert("Sorry, but I don't know that name."); 
+}
+		
+    }); */
+	
+	});
+</script>
+</head>
+<body>
+    <div id="container">
+		<nav class="nav">
+				<ul class="ul">
+					<a href="index.html"><img class="logo" src="icon/logo%20lekker%20pittig%20def.png"/></a>
+					<div class="ham">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+					</div>
+					<li class="login2"><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+					<li id="navknop" class="login"><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+					<li id="navknop" class="home"><a href="index.html">Home</a></li>
+					<li id="navknop" class="contact"><a href="contact.html">Contact</a></li>
+					<li id="navknop" class="disclaimer"><a href="disclaimer.html">Disclaimer</a></li>
+					<li id="navknop" class="recept"><a href="recept.html">Recepten</a></li>
+					<li id="navknop" class="aboutus"><a href="kant-klaar.html">Kant &#38; Klaar</a></li>
+					<li id="navknop" class="aboutus"><a href="kruiden.html">Kruiden</a></li>
+				</ul>
+		</nav>
+        <header>
+		<div class="intro">
+			<h1 id="hallo">Hallo</h1>
+			<h1 id="welkom">Welkom.</h1>
+		</div>
+        </header>
+		<main>
+			<div id="content">
+				<div id="border">
+					<div id="tekstvak">
+						<i id="homeicon" class="fa fa-home" aria-hidden="true"></i>
+						<h1 class="h1">Nu nieuw in Nederland:</h1>
+						<h2> Lekker Pittig!</h2>
+						<h3>
+							 Geen tijd om eten te maken, haast of gewoon lui? Pak dan bijvoorbeeld een van onze wraps, in een handomdraai klaar en vol voedingswaarde. Kwaliteit in een handomdraai en nog lekker ook. Kijk ook eens op onze receptensite. Daar vind je recepten waar je zelfs je ouders mij kan overdonderen.
+						</h3>
+						<div id="line1">
+							<div id="dot"></div>
+							<div id="dot"></div>
+						</div>
+						<h2> Binnenkort</h2>
+						<h3>
+							 Nieuw: De mexico fiesta wrap. Een wrap die zelfs koud het serveren waard is. Snel, lekker en kruidig.  Alles wat jij hoeft toe te voegen is het vlees, onze mix doet de rest.
+						</h3>
+						<br>
+						<form id="rate" name="rate" method="post" action="" enctype="multipart/form-data">
+						<h3 class="rate">Rate me <br/>
+							<br>
+							<input type="radio" id="rate1" name="rate" class="radio" value="1/5">
+							<label for="rate1"><a class="star2" id="star1" name="star" role="option"><i class="fa fa-star" aria-hidden="true"></i></a></label>
+							<input type="radio" id="rate2" name="rate" class="radio" value="2/5">
+							<label for="rate2"><a class="star2" id="star2" name="star"><i class="fa fa-star" aria-hidden="true"></i></a></label>
+							<input type="radio" id="rate3" name="rate" class="radio" value="3/5">
+							<label for="rate3"><a class="star2" id="star3" name="star"><i class="fa fa-star" aria-hidden="true"></i></a></label>
+							<input type="radio" id="rate4" name="rate" class="radio" value="4/5">
+							<label for="rate4"><a class="star2" id="star4" name="star"><i class="fa fa-star" aria-hidden="true"></i></a></label>
+							<input type="radio" id="rate5" name="rate" class="radio" value="5/5">
+							<label for="rate5"><a class="star2" id="star5" name="star"><i class="fa fa-star" aria-hidden="true"></i></a></label>
+							<br/>
+							<input type="text" value="" id="name" name="name" placeholder="Voornaam student" required/>
+							<br>
+            				<input type="submit" value="Verzenden" id="submit" name="submit"/>
+						</h3>
+						</form>
+					</div>
+					<div class="lp">LP</div>
+				</div>
+			</div>
+			<img class="lepel" src="image/PNG/lepel.png" min-width="150px"/>
+			<img class="vork" src="image/PNG/vork.png" min-width="90px"/>
+			<img class="pan" src="image/PNG/pan.png" min-width="350px"/>
+			<img class="mes" src="image/PNG/mes.png" min-width="160px"/>
+		</main>
+        <footer>
+			<a href="#" class="fb"><img src="icon/facebook-icon-preview-1.png" /></a>
+			<a href="#" class="insta"><img src="icon/instagram-logo-vector-download-400x400.png" /></a>
+        </footer>
+    </div>
+	
+	<script>
+	
+</script>
+</body>
+</html>

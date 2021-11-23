@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#da2020">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#da2020">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#da2020">
+<meta charset=utf-8 />
+<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+<head>
+<title> Lekker Pittig </title>
+<link href="style.css" type="text/css" rel="stylesheet" media="screen"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="jquery/jquery-2.1.1.min.js"></script>
+	<script>
+    $(document).ready(function(){
+		
+		
+		
+	
+		var ham = 'unclicked';
+	
+		$('.ham').click(function(){
+            if (ham == 'unclicked'){
+								ham = 'clicked';
+								$('.nav').animate({height: '330px'}, 1000);
+								$('.ul').animate({height: '330px'}, 1000);
+			}
+                     else { 
+						 ham = 'unclicked';
+						 $('.nav').animate({height: '30px'}, 1000);
+						 $('.ul').animate({height: '50px'}, 1000);
+                    }
+    	});
+		
+    });
+</script>
+	<style>
+		header {
+			display: none;
+		}
+		main {
+			background-color: transparent;
+			position: relative;
+			min-height: 90vh;
+			top: 100px;
+		}
+		main img {
+			width: 20%;
+			border-bottom: solid #c7c7c7 0px;
+			margin: 0px;
+			margin-right: 10px;
+		}
+		main #content {
+			text-align: center;
+		}
+		#content {
+			height: auto;
+			width: 100%;
+			background-color: transparent;
+			top: 0px;
+			float: left;
+		}
+		#lijst {
+			width: 25%;
+			height: auto;
+			overflow: hidden;
+			min-height: 500px;
+			background-color: white;
+			background-image: url(image/2.jpg);
+			margin-left: 50px;
+			color: white;
+			display: inline-block;
+		}
+		#lijst p {
+			padding: 0px 10px 0px 10px;
+		}
+		#recept {
+			width: 100%;
+			height: 500px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+		.recept1 {
+			background-image: url(image/gerechten/Gado%20Gado-boontjes%20en%20sat%C3%A9vlees.jpeg);
+		}
+		.recept2 {
+			background-image: url(image/gerechten/Cashew%20Chicken%20met%20Shii-take.jpg);
+		}
+		.recept3 {
+			background-image: url(image/gerechten/Nasi%20Goreng%20met%20sambalchampignons%20en%20kipsat%C3%A9.png);
+		}
+		#line1 {
+			margin-top: 0;
+			background-color: white;
+		}
+		#dot {
+			background-color: white;
+		}
+		footer {
+			top: 150px;
+		}
+		@media screen and (max-width: 1024px) {
+			main #content {
+				display: block;
+			}
+			#content img {
+				width: 60%;
+				height: auto;
+			}
+			#lijst {
+				display: block;
+				width: 60%;
+				margin: 0px auto;
+			}
+			.lijst2 {
+				position: relative;
+				top: 40px;
+			}
+			.lijst3 {
+				position: relative;
+				top: 80px;
+			}
+			footer {
+				position: relative;
+				text-align: center;
+				background-color: black;
+				width: 100%;
+				top: 0;
+				bottom: 0;
+				margin-top: 100vh;
+				line-height: 3;
+				z-index: 1;
+				overflow: hidden;
+				max-height: 10px;
+				display: none;
+			}
+		}
+		@media screen and (max-width: 736px) {
+			#lijst {
+				width: 90%;
+			}
+		}
+		@media screen and (max-width: 480px) {
+			footer {
+				margin-top: 100vh;
+				max-height: 10px;
+			}
+		}
+	</style>
+</head>
+<body>
+    <div id="container">
+		<nav class="nav">
+				<ul class="ul">
+					<a href="index.html"><img class="logo" src="icon/logo%20lekker%20pittig%20def.png"/></a>
+					<div class="ham">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+					</div>
+					<li class="login2"><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+					<li id="navknop" class="login"><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+					<li id="navknop" class="home"><a href="index.html">Home</a></li>
+					<li id="navknop" class="contact"><a href="contact.html">Contact</a></li>
+					<li id="navknop" class="disclaimer"><a href="disclaimer.html">Disclaimer</a></li>
+					<li id="navknop" class="recept"><a href="recept.html">Recepten</a></li>
+					<li id="navknop" class="aboutus"><a href="kant-klaar.html">Kant &#38; Klaar</a></li>
+					<li id="navknop" class="aboutus"><a href="kruiden.html">Kruiden</a></li>
+				</ul>
+		</nav>
+        <header>
+        </header>
+		<main>
+			<div id="content">
+				<div id="lijst" class="lijst1">
+					<div id="recept" class="recept1"></div>
+					<br>
+					<br>
+					<h2>Gado Gado-boontjes en satévlees</h2>
+					<br>
+					<b>Ingrediënten</b><br/>
+					<br>
+					<p>
+1 pak Lekker Pittig maaltijdpakket gado gado<br>
+400 gram gebroken verse sperziebonen<br>
+250 gram varkensvleesblokjes<br>
+Lekker Pittig Wok Olie<br>
+Lekker Pittig Ketjap Manis<br>
+0.5 dl sinaasappelsap<br>
+2 hardgekookte eieren<br>
+2 eetlepels gehakte koriander of selderij<br/>
+<br>
+						
+						
+</p>
+					<br>
+					<div id="line1">
+							<div id="dot"></div>
+							<div id="dot"></div>
+						</div>
+					<br>
+					<b>Bereiding</b><br/>
+					<br>
+					<p>Kook de rijst (uit het pak) met de sperziebonen in ruim kokend water in 8 minuten gaar, afgieten.<br>
+
+Roerbak het vlees 5 minuten in een scheutje olie. Voeg een scheutje ketjap en het sinaasappelsap toe en laat het even pruttelen. Roer 1/4 l water en het sauspoeder (uit het pak) erdoor, 1 minuut laten koken.<br>
+<br>
+Bak de kroepoek (uit het pak) 30 seconden in een laag hete olie (180°C).<br>
+<br>
+Schep de rijst en de boontjes, het vlees en de eieren op een schaal. Bestrooi met de groene kruiden en de groentekruidenmix (uit het pak).</p>
+					<br>
+					<br>
+				</div>
+				<div id="lijst" class="lijst2">
+					<div id="recept" class="recept2"></div>
+					<br>
+					<br>
+					<h2>Cashew Chicken met Shii-take</h2>
+					<br>
+					<b>Ingrediënten</b><br/>
+					<br>
+					<p>
+1 pak Lekker Pittig maaltijdpakket gado gado<br>
+400 gram gebroken verse sperziebonen<br>
+250 gram varkensvleesblokjes<br>
+Lekker Pittig Wok Olie<br>
+Lekker Pittig Ketjap Manis<br>
+0.5 dl sinaasappelsap<br>
+2 hardgekookte eieren<br>
+2 eetlepels gehakte koriander of selderij<br/>
+<br>
+						
+						
+</p>
+					<br>
+					<div id="line1">
+							<div id="dot"></div>
+							<div id="dot"></div>
+						</div>
+					<br>
+					<b>Bereiding</b><br/>
+					<br>
+					<p>Kook de rijst (uit het pak) met de sperziebonen in ruim kokend water in 8 minuten gaar, afgieten.<br>
+
+Roerbak het vlees 5 minuten in een scheutje olie. Voeg een scheutje ketjap en het sinaasappelsap toe en laat het even pruttelen. Roer 1/4 l water en het sauspoeder (uit het pak) erdoor, 1 minuut laten koken.<br>
+<br>
+Bak de kroepoek (uit het pak) 30 seconden in een laag hete olie (180°C).<br>
+<br>
+Schep de rijst en de boontjes, het vlees en de eieren op een schaal. Bestrooi met de groene kruiden en de groentekruidenmix (uit het pak).</p>
+					<br>
+					<br>
+				</div>
+				<div id="lijst" class="lijst3">
+					<div id="recept" class="recept3"></div>
+					<br>
+					<br>
+					<h2>Nasi Goreng met sambalchampignons en kipsaté</h2>
+					<br>
+					<b>Ingrediënten</b><br/>
+					<br>
+					<p>
+1 pak Lekker Pittig maaltijdpakket gado gado<br>
+400 gram gebroken verse sperziebonen<br>
+250 gram varkensvleesblokjes<br>
+Lekker Pittig Wok Olie<br>
+Lekker Pittig Ketjap Manis<br>
+0.5 dl sinaasappelsap<br>
+2 hardgekookte eieren<br>
+2 eetlepels gehakte koriander of selderij<br/>
+<br>
+						
+						
+</p>
+					<br>
+					<div id="line1">
+							<div id="dot"></div>
+							<div id="dot"></div>
+						</div>
+					<br>
+					<b>Bereiding</b><br/>
+					<br>
+					<p>Kook de rijst (uit het pak) met de sperziebonen in ruim kokend water in 8 minuten gaar, afgieten.<br>
+
+Roerbak het vlees 5 minuten in een scheutje olie. Voeg een scheutje ketjap en het sinaasappelsap toe en laat het even pruttelen. Roer 1/4 l water en het sauspoeder (uit het pak) erdoor, 1 minuut laten koken.<br>
+<br>
+Bak de kroepoek (uit het pak) 30 seconden in een laag hete olie (180°C).<br>
+<br>
+Schep de rijst en de boontjes, het vlees en de eieren op een schaal. Bestrooi met de groene kruiden en de groentekruidenmix (uit het pak).</p>
+				</div>
+			</div>
+		</main>
+        <footer>
+			<a href="#" class="fb"><img src="icon/facebook-icon-preview-1.png" /></a>
+			<a href="#" class="insta"><img src="icon/instagram-logo-vector-download-400x400.png" /></a>
+        </footer>
+    </div>
+	
+	<script>
+	
+</script>
+</body>
+</html>

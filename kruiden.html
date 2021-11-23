@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#da2020">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#da2020">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#da2020">
+<meta charset=utf-8 />
+<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+<head>
+<title> Lekker Pittig </title>
+<link href="style.css" type="text/css" rel="stylesheet" media="screen"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script src="jquery/jquery-2.1.1.min.js"></script>
+	<script>
+    $(document).ready(function(){
+		
+		
+		
+	
+		var ham = 'unclicked';
+	
+		$('.ham').click(function(){
+            if (ham == 'unclicked'){
+								ham = 'clicked';
+								$('.nav').animate({height: '330px'}, 1000);
+								$('.ul').animate({height: '330px'}, 1000);
+			}
+                     else { 
+						 ham = 'unclicked';
+						 $('.nav').animate({height: '30px'}, 1000);
+						 $('.ul').animate({height: '50px'}, 1000);
+                    }
+    	});
+		
+    });
+</script>
+	<style>
+		header {
+			display: none;
+		}
+		main {
+			background-color: transparent;
+			position: relative;
+			min-height: 90vh;
+			top: 100px;
+		}
+		main img {
+			width: 20%;
+			border-bottom: solid #c7c7c7 0px;
+			margin: 0px;
+			margin-right: 10px;
+		}
+		main #content {
+			display: inline-table;
+			text-align: center;
+		}
+		#content {
+			height: auto;
+			width: 100%;
+			background-color: transparent;
+			top: 0px;
+		}
+		footer {
+			top: 100px;
+		}
+		@media screen and (max-width: 1024px) {
+			main #content {
+				display: block;
+			}
+			#content img {
+				width: 60%;
+				height: auto;
+			}
+			footer {
+				position: relative;
+				text-align: center;
+				background-color: black;
+				width: 100%;
+				top: 0;
+				bottom: 0;
+				margin-top: 100vh;
+				line-height: 3;
+				z-index: 1;
+				overflow: hidden;
+				max-height: 10px;
+				display: none;
+			}
+		}
+		@media screen and (max-width: 480px) {
+			footer {
+				margin-top: 100vh;
+				max-height: 10px;
+			}
+		}
+	</style>
+</head>
+<body>
+    <div id="container">
+		<nav class="nav">
+				<ul class="ul">
+					<a href="index.html"><img class="logo" src="icon/logo%20lekker%20pittig%20def.png"/></a>
+					<div class="ham">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+					</div>
+					<li class="login2"><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+					<li id="navknop" class="login"><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+					<li id="navknop" class="home"><a href="index.html">Home</a></li>
+					<li id="navknop" class="contact"><a href="contact.html">Contact</a></li>
+					<li id="navknop" class="disclaimer"><a href="disclaimer.html">Disclaimer</a></li>
+					<li id="navknop" class="recept"><a href="recept.html">Recepten</a></li>
+					<li id="navknop" class="aboutus"><a href="kant-klaar.html">Kant &#38; Klaar</a></li>
+					<li id="navknop" class="aboutus"><a href="kruiden.html">Kruiden</a></li>
+				</ul>
+		</nav>
+        <header>
+        </header>
+		<main>
+			<div id="content">
+				<img class="kruid1" src="image/kruiden/bieslook-large.jpg" >
+				<img class="kruid2" src="image/kruiden/djahe.jpg" >
+				<img class="kruid3" src="image/kruiden/djintan.jpg" >
+				<img class="kruid4" src="image/kruiden/GARLIC-POWDER.jpg" >
+				<img class="kruid5" src="image/kruiden/Ketoembar%20groot.JPG" >
+				<img class="kruid6" src="image/kruiden/kurkuma.jpg" >
+				<img class="kruid7" src="image/kruiden/laos.jpg" >
+				<img class="kruid8" src="image/kruiden/laurier-large.jpg" >
+				<img class="kruid9" src="image/kruiden/rosemary.jpg" >
+				<img class="kruid10" src="image/kruiden/tijm-large.jpg" >
+			</div>
+		</main>
+        <footer>
+			<a href="#" class="fb"><img src="icon/facebook-icon-preview-1.png" /></a>
+			<a href="#" class="insta"><img src="icon/instagram-logo-vector-download-400x400.png" /></a>
+        </footer>
+    </div>
+	
+	<script>
+	
+</script>
+</body>
+</html>
